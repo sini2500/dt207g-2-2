@@ -1,1 +1,19 @@
+.work-list {
+    display: grid;
+    gap: 1rem;
+}
 
+.work-card {
+    padding: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+.work-card-buttons {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+.work-card-buttons button {
+    padding: 12px;
+}
