@@ -1,4 +1,4 @@
-const apiUrl = "http://localhost:3000/api/workexperience";
+const apiUrl = "https://sini2500-dt207g-2.onrender.com/api/workexperience";
 
 const params = new URLSearchParams(window.location.search);
 const updatingId = params.get("id");
