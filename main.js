@@ -15,7 +15,7 @@ async function getWorkExperience() {
     data.forEach(work => {
 
         container.innerHTML += `
-        <article class="work-card">
+        <article class="work-card row">
 
             <div class="work-card-header">
                 <h2>${work.companyname}</h2>
@@ -28,7 +28,7 @@ async function getWorkExperience() {
                 <p class="description">${work.description}</p>
             </div>
 
-            <div class="work-card-buttons">
+            <div class="work-card-buttons row">
                 <a class="updateBtn" href="update.html?id=${work.id}"> Uppdatera </a>
                 <button class="deleteBtn" onclick="deleteWork(${work.id})">
                     Radera

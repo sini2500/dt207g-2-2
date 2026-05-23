@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="sv">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,56 +14,72 @@
 <body>
 
     <header>
-        <h1>Uppdatera arbetserfarenhet</h1>
+        <div class="container">
+            <div class="logo">
+                <a href="/">WorkWork API</a>
+            </div>
 
-        <nav>
-            <a href="index.html">Startsida</a>
-            <a href="add.html">Lägg till</a>
-            <a href="about.html">Om</a>
-        </nav>
+            <nav class="nav">
+                <a href="index.html">Lista</a>
+                <a href="add.html">Lägg till</a>
+                <a href="about.html">Om</a>
+            </nav>
+        </div>
+
     </header>
 
     <main>
+        <div class="container">
+            <section>
+                <h1>Uppdatera arbetserfarenhet</h1>
+                <form id="updateForm">
 
-        <form id="updateForm">
+                    <div class="row">
+                        <div class="col">
+                            <label for="companyname">Företagsnamn</label>
+                            <input type="text" id="companyname" name="companyname">
+                        </div>
 
-            <div>
-                <label for="companyname">Företagsnamn</label>
-                <input type="text" id="companyname" name="companyname">
-            </div>
+                        <div class="col">
+                            <label for="jobtitle">Jobbtitel</label>
+                            <input type="text" id="jobtitle" name="jobtitle">
+                        </div>
 
-            <div>
-                <label for="jobtitle">Jobbtitel</label>
-                <input type="text" id="jobtitle" name="jobtitle">
-            </div>
+                        <div class="col">
+                            <label for="location">Plats</label>
+                            <input type="text" id="location" name="location">
+                        </div>
+                    </div>
 
-            <div>
-                <label for="location">Plats</label>
-                <input type="text" id="location" name="location">
-            </div>
+                    <div class="row">
 
-            <div>
-                <label for="startdate">Startdatum</label>
-                <input type="date" id="startdate" name="startdate">
-            </div>
+                        <div class="col">
+                            <label for="startdate">Startdatum</label>
+                            <input type="date" id="startdate" name="startdate">
+                        </div>
 
-            <div>
-                <label for="enddate">Slutdatum</label>
-                <input type="date" id="enddate" name="enddate">
-            </div>
+                        <div class="col">
+                            <label for="enddate">Slutdatum</label>
+                            <input type="date" id="enddate" name="enddate">
+                        </div>
+                    </div>
 
-            <div>
-                <label for="description">Beskrivning</label>
-                <textarea id="description" name="description" rows="5"></textarea>
-            </div>
+                    <div class="row">
+                        <div class="col">
+                            <label for="description">Beskrivning</label>
+                            <textarea id="description" name="description" rows="5"></textarea>
+                        </div>
+                    </div>
 
-            <button type="submit">Uppdatera</button>
+                    <button type="submit">Uppdatera</button>
 
-        </form>
+                </form>
 
-        <p id="message"></p>
-
+                <p id="message"></p>
+            </section>
+        </div>
     </main>
 
 </body>
+
 </html>
